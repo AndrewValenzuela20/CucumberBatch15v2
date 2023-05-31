@@ -19,8 +19,9 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.8.3</version>
+            <version>4.9.1</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
@@ -61,6 +62,30 @@
                 <artifactId>log4j</artifactId>
                 <version>1.2.16</version>
             </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230227</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -72,7 +97,7 @@
                 <configuration>
                     <includes>
                         <include>**/*SmokeRunner.java</include>
-                    </includes>
+                    </includes>~~
                 </configuration>
             </plugin>
             <plugin>

@@ -7,6 +7,10 @@ Feature: Employee
     And click on login button
     When user clicks on PIM option
     And user clicks on add employee button
-    And user enters firstname and middlename and lastname
+    And user enters "nesha" and "sania" and  "standart"
+    And user captures the employee id
+    And user clicks on save button
+    And query the information in backend
+    Then verify the results from frontend and backend
     #And user clicks on save button
     #And Close the browser
